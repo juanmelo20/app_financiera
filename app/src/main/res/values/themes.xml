@@ -1,9 +1,30 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.App_financiera" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+    <style name="Base.Theme.AppFinanciera" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/carbon</item>
+        <item name="colorPrimaryVariant">@color/carbon_oscuro</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/azul</item>
+        <item name="colorSecondaryVariant">@color/azul_profundo</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="materialButtonStyle">@style/Widget.AppFinanciera.Button</item>
     </style>
 
-    <style name="Theme.App_financiera" parent="Base.Theme.App_financiera" />
+    <style name="Theme.AppFinanciera" parent="Base.Theme.App_financiera" />
+
+    <!-- Botón principal: azul, como "Send" -->
+    <style name="Widget.AppFinanciera.Button" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/azul</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="cornerRadius">12dp</item>
+    </style>
+
+    <!-- Botón secundario: verde con texto oscuro, para que se lea -->
+    <style name="Widget.AppFinanciera.Button.Secundario">
+        <item name="backgroundTint">@color/verde</item>
+        <item name="android:textColor">@color/casi_negro</item>
+    </style>
 </resources>
