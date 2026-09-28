@@ -1,0 +1,15 @@
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    <color name="carbon">#3A3E47</color>
+    <color name="carbon_oscuro">#2A2B2F</color>
+    <color name="azul">#0DA9FE</color>
+    <color name="azul_profundo">#068CFD</color>
+    <color name="verde">#37D8A2</color>
+    <color name="naranja">#D6603A</color>
+    <color name="morado">#9057C8</color>
+    <color name="gris_claro">#F0F0F2</color>
+    <color name="casi_negro">#26272C</color>
+</resources>
