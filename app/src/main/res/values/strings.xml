@@ -1,3 +1,87 @@
 <resources>
-    <string name="app_name">app_financiera</string>
+    <!-- Registro -->
+    <string name="titulo_registro">Crear cuenta</string>
+    <string name="subtitulo_registro">Completa tus datos para abrir tu cuenta</string>
+    <string name="campo_nombre">Nombre completo</string>
+    <string name="error_nombre_longitud_min">El nombre debe tener minimo 3 letras</string>
+    <string name="error_nombre_longitud_max">El nombre debe tener maximo 20 letras</string>
+    <string name="error_nombre_caracteres_especiales">El nombre no debe contener caracteres especiales</string>
+    <string name="error_nombre_numeros">El nombre no debe contener números</string>
+    <string name="campo_email">Correo electrónico</string>
+    <string name="campo_celular">Número celular</string>
+    <string name="campo_cedula">Número de cédula</string>
+    <string name="campo_contrasena">Contraseña</string>
+    <string name="campo_confirmar">Confirmar contraseña</string>
+    <string name="btn_crear_cuenta">Crear cuenta</string>
+    <string name="error_obligatorio">Este campo es obligatorio</string>
+    <string name="error_email">Escribe un correo válido</string>
+    <string name="error_email_existe">Ya existe una cuenta con este correo</string>
+    <string name="error_celular">El celular debe tener 10 dígitos</string>
+    <string name="error_cedula">La cédula debe tener entre 7 y 10 dígitos</string>
+    <string name="error_cedula_existe">Ya existe una cuenta con esta cédula</string>
+    <string name="error_contrasena_Longitud">Mínimo 8 caracteres</string>
+    <string name="error_contrasena_mayuscula">Debe contener al menos una letra mayúscula</string>
+    <string name="error_contrasena_minuscula">Debe contener al menos una letra minúscula</string>
+    <string name="error_contrasena_numero">Debe contener al menos un número</string>
+    <string name="error_contrasena_caracteres_especiales">Debe contener al menos un carácter especial</string>
+    <string name="error_contrasena_confirmar">Las contraseñas no coinciden</string>
+    <string name="msg_cuenta_creada">Cuenta creada. Tu tarjeta Principal tiene $ 5.000.000</string>
+    <string name="msg_error_registro">No se pudo crear la cuenta. Intenta de nuevo</string>
+
+    <!-- Login -->
+    <string name="login_titulo">Iniciar sesión</string>
+    <string name="login_email">Correo electrónico</string>
+    <string name="login_contrasena">Contraseña</string>
+    <string name="login_boton">Ingresar</string>
+    <string name="login_ir_registro">¿No tienes cuenta? Regístrate</string>
+    <string name="login_error_email_vacio">Ingresa tu correo</string>
+    <string name="login_error_email_invalido">Correo no válido</string>
+    <string name="login_error_contrasena_vacia">Ingresa tu contraseña</string>
+    <string name="login_error_credenciales">Correo o contraseña incorrectos</string>
+    <string name="login_exitoso">Inicio de sesión exitoso</string>
+
+    <!-- Home -->
+    <string name="home_saludo">Hola, %1$s</string>
+    <string name="home_saldo_total">Saldo total</string>
+    <string name="home_enviar">Enviar dinero</string>
+    <string name="home_historial">Historial</string>
+    <string name="home_nueva_tarjeta">Nueva tarjeta</string>
+    <string name="home_cerrar_sesion">Cerrar sesión</string>
+
+    <!-- Tarjetas -->
+    <string name="home_mis_tarjetas">Mis tarjetas</string>
+    <string name="tarjeta_saldo">Saldo</string>
+    <string name="tarjeta_vence">Vence</string>
+
+    <!-- Nueva Tarjeta -->
+    <string name="nueva_tarjeta_titulo">Nueva tarjeta</string>
+    <string name="nueva_tarjeta_subtitulo">Ingresa un nombre para tu nueva tarjeta</string>
+    <string name="nueva_tarjeta_nombre_campo">Nombre de la tarjeta (ej. Ahorros, Viajes)</string>
+    <string name="nueva_tarjeta_btn">Crear tarjeta</string>
+    <string name="nueva_tarjeta_exito">Tarjeta creada con éxito</string>
+    <string name="nueva_tarjeta_error">No se pudo crear la tarjeta</string>
+    <string name="nueva_tarjeta_nombre_vacio">Ingresa un nombre para la tarjeta</string>
+
+    <!-- Enviar Dinero -->
+    <string name="enviar_titulo">Enviar dinero</string>
+    <string name="enviar_subtitulo">Transfiere fondos de manera rápida y segura</string>
+    <string name="enviar_origen_label">Tarjeta de origen</string>
+    <string name="enviar_destino_label">Número de tarjeta destino (16 dígitos)</string>
+    <string name="enviar_monto_label">Monto a enviar ($)</string>
+    <string name="enviar_btn">Enviar dinero</string>
+    <string name="enviar_error_origen_vacio">Selecciona una tarjeta de origen</string>
+    <string name="enviar_error_destino_invalido">Ingresa un número de tarjeta válido (16 dígitos)</string>
+    <string name="enviar_error_monto_invalido">Ingresa un monto válido mayor a $ 0</string>
+    <string name="enviar_error_saldo_insuficiente">Saldo insuficiente en la tarjeta seleccionada</string>
+    <string name="enviar_error_destino_no_existe">No se encontró ninguna tarjeta con ese número</string>
+    <string name="enviar_error_misma_tarjeta">La tarjeta de origen y destino no pueden ser la misma</string>
+    <string name="enviar_exito">Transferencia realizada con éxito</string>
+    <string name="enviar_error_general">No se pudo realizar la transferencia</string>
+
+    <!-- Historial -->
+    <string name="historial_titulo">Historial de transacciones</string>
+    <string name="historial_subtitulo">Todas tus transferencias realizadas y recibidas</string>
+    <string name="historial_vacio">No hay transacciones registradas</string>
+    <string name="historial_origen_destino">De: %1$s ➔ A: %2$s</string>
+
 </resources>

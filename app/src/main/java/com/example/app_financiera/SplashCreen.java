@@ -12,11 +12,10 @@ import androidx.appcompat.app.AppCompatActivity;
 public class SplashCreen extends AppCompatActivity {
 
     private static final long DURACION_MS = 2000;
-
     private final Handler handler = new Handler(Looper.getMainLooper());
-
     private final Runnable irAlSiguiente = () -> {
-        startActivity(new Intent(SplashCreen.this, MainActivity.class));
+        Class<?> destino = Sesion.activa(SplashCreen.this) ? MainActivity.class : Login.class;
+        startActivity(new Intent(SplashCreen.this, destino));
         finish();
     };
 
@@ -29,5 +28,9 @@ public class SplashCreen extends AppCompatActivity {
         setContentView(R.layout.activity_splash_creen);
         handler.postDelayed(irAlSiguiente, DURACION_MS);
     }
-
+    @Override
+    protected void onDestroy() {
+        handler.removeCallbacks(irAlSiguiente);
+        super.onDestroy();
+    }
 }

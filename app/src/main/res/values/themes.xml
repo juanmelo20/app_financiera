@@ -8,9 +8,11 @@
         <item name="colorSecondaryVariant">@color/azul_profundo</item>
         <item name="colorOnSecondary">@color/white</item>
         <item name="materialButtonStyle">@style/Widget.AppFinanciera.Button</item>
+        <item name="textInputStyle">@style/Widget.AppFinanciera.Campo</item>
+        <item name="android:windowSplashScreenBackground" tools:targetApi="31">@color/carbon</item>
     </style>
 
-    <style name="Theme.AppFinanciera" parent="Base.Theme.App_financiera" />
+    <style name="Theme.AppFinanciera" parent="Base.Theme.AppFinanciera" />
 
     <!-- Botón principal: azul, como "Send" -->
     <style name="Widget.AppFinanciera.Button" parent="Widget.MaterialComponents.Button">
@@ -26,5 +28,16 @@
     <style name="Widget.AppFinanciera.Button.Secundario">
         <item name="backgroundTint">@color/verde</item>
         <item name="android:textColor">@color/casi_negro</item>
+    </style>
+
+    <!-- Campos: bordes redondeados y azul al seleccionarlos -->
+    <style name="Widget.AppFinanciera.Campo" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxCornerRadiusTopStart">12dp</item>
+        <item name="boxCornerRadiusTopEnd">12dp</item>
+        <item name="boxCornerRadiusBottomStart">12dp</item>
+        <item name="boxCornerRadiusBottomEnd">12dp</item>
+        <item name="boxStrokeColor">@color/azul</item>
+        <item name="hintTextColor">@color/azul</item>
+        <item name="startIconTint">@color/carbon</item>
     </style>
 </resources>
